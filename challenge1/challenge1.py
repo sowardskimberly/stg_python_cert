@@ -1,8 +1,6 @@
 import unittest
 from selenium import webdriver
-"""
-Open Google and assert that the title is google
-"""
+
 
 class Challenge1(unittest.TestCase):
 
@@ -13,6 +11,8 @@ class Challenge1(unittest.TestCase):
         self.driver.close()
 
     def test_challenge1(self):
+        """Open Google and assert that the title is google
+        """
         website = "https://www.google.com"
         self.driver.get(website)
         self.assertIn("Google", self.driver.title)

@@ -4,9 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-"""
-Go to copart.com and search through popular items. Return the make the url for each popular item
-"""
+
 class Challenge3(unittest.TestCase):
 
     def setUp(self):
@@ -16,6 +14,8 @@ class Challenge3(unittest.TestCase):
         self.driver.close()
 
     def test_challenge3(self):
+        """Go to copart.com and search through popular items. Return the make the url for each popular item
+        """
         website = "https://www.copart.com"
         self.driver.get(website)
         # I had to wait or else the next find_element would have zero results

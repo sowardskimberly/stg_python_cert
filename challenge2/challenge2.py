@@ -6,9 +6,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-"""
-Open copart.com and search for exotics. In the list verify that porsche is an option
-"""
 
 class Challenge2(unittest.TestCase):
 
@@ -19,6 +16,8 @@ class Challenge2(unittest.TestCase):
         self.driver.close()
 
     def test_challenge2(self):
+        """Open copart.com and search for exotics. In the list verify that porsche is an option
+        """
         website = "https://www.copart.com"
         search_word = "exotics"
         self.driver.get(website)

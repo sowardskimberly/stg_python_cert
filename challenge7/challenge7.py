@@ -1,14 +1,14 @@
 import unittest
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+import os
+import sys
+from libs import Cars
 
-"""
-Find all the Makes available from the home page at copart.com. Verify each make takes you to a search of the correct
-make
-"""
+# Add current directory to import a file used in all challenge folders
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
 
 class Challenge7(unittest.TestCase):
 
@@ -19,37 +19,12 @@ class Challenge7(unittest.TestCase):
         self.driver.close()
 
     def test_challenge7(self):
+        """On Copart navigate check that the make list navigates to a page with that make on it
+        """
         website = "https://www.copart.com"
-        self.driver.get(website)
-        wait = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.ID, "input-search")))
-        # List of all elements in the available make section of page
-        total_makes = self.driver.find_elements_by_xpath('//span[@class="make-items"]/span/a')
-        car_make = []
-        car_href = []
-        # separate the car make and car href from the list of all elements on page
-        for car in range(len(total_makes)-1):
-            car_make.append(total_makes[car].text)
-            car_href.append(total_makes[car].get_attribute('href'))
-
-        # Visit every href and verify that the make on the home page matches the search make
-        timeout = 3  # seconds
-        for item in range(len(car_href) - 1):
-            self.driver.get(car_href[item])
-            try:
-                Waiting = WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((
-                    By.XPATH, '(//tr[@class="odd"])')))
-            except TimeoutException:
-                print("Something really bad happened. You should make a ticket for this")
-
-            # get a list of makes on the search page
-            makes_on_page = self.driver.find_elements_by_xpath('//span[@data-uname="lotsearchLotmake"]')
-            # find one of those makes
-            make_on_page = makes_on_page[0].get_attribute('innerHTML')
-
-            try:
-                self.assertEqual((car_make[item]).upper(), make_on_page)
-            except AssertionError:
-                print(make_on_page)  # Harley vs Harley-Davidson and Maclaren vs Maclaren Auotomotives don't match. Bug?
+        Cars.navigate_to_copart(website, self.driver)
+        car_make, car_href = Cars.sep_makes_and_href(self.driver)
+        Cars.go_to_links(car_make, car_href, self.driver)
 
 
 if __name__ == '__main__':
