@@ -147,7 +147,7 @@ class Cars:
             driver_info (driver): the browser being used
         """
         formal_filter = filter_choice.capitalize()
-        model_expand = driver_info.find_element_by_xpath('//a[@data-uname = "{}Filter"]'.format(formal_filter)).click()
+        model_expand = driver_info.find_element_by_xpath(f'//a[@data-uname = "{formal_filter}Filter"]').click()
 
     @staticmethod
     def model_search(model_text, driver_info):
@@ -161,11 +161,11 @@ class Cars:
         formal_modal = model_text.capitalize()
         model_search.send_keys(formal_modal)
         try:
-            model_done_searching = driver_info.find_element_by_xpath('//abbr[@value = "{}"]'.format(formal_modal))
-            print("Look there are {}'s!".format(formal_modal))
+            model_done_searching = driver_info.find_element_by_xpath(f'//abbr[@value = "{formal_modal}"]')
+            print(f"Look there are {formal_modal}'s!")
         except NoSuchElementException:
-            print("No {}'s available right now".format(formal_modal))
-            file_name = "no_{}.png".format(formal_modal)
+            print(f"No {formal_modal}'s available right now")
+            file_name = f"no_{formal_modal}.png"
             Cars.take_screenshot(file_name, driver_info)
 
     @staticmethod
