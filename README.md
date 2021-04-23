@@ -1,13 +1,13 @@
-#STG Certification 1 Python
+# STG Certification 1 Python
 
-Challenge 1
+## Challenge 1
 Within test_challenge1.py, write a new test that does the following:
 
 Go to google.com
 Assert that the results page that loads has “google” in its title
 
 
-Challenge 2
+## Challenge 2
 Create test_challenge2.py and write a test that does the following:
 
 Go to copart.com
@@ -15,7 +15,7 @@ Search for "exotics"
 Assert "PORSCHE" is in the list of cars on the Results Page
 
 
-Challenge 3
+## Challenge 3
 Create test_challenge3.py and write a test that does the following:
 
 Go to copart.com
@@ -23,7 +23,7 @@ On the Home Page, under Most Popular Items, there is a Makes/Models section. For
 Example Output: SILVERADO - https://www.copart.com/popular/model/silverado
 
 
-Challenge 4
+## Challenge 4
 Fibonacci (recursion)
 
 Create test_challenge4.py and write a test that does the following:
@@ -35,7 +35,7 @@ Example: If the sequence is 18, then print "Eighteen"
 Example: If the seqence value is 120, then print "One Hundred Twenty"
 
 
-Challenge 5
+## Challenge 5
 Part 1 - Create test_challenge5.py and write a test that does the following:
 
 Go to copart.com
@@ -58,7 +58,7 @@ Example: SIDE and ALL OVER would each count towards MISC
 Example Output: REAR END: 2, FRONT END: 7, MINOR DENT/SCRATCHES: 22, UNDERCARRIAGE: 0, MISC: 4
 
 
-Challenge 6
+## Challenge 6
 Create test_challenge6.py and write a test that does the following:
 
 Go to copart.com
@@ -67,7 +67,7 @@ Then for the Model, search 'skyline'. This is a rare car that might not exist
 If it doesn't exist, catch the exception and take a screenshot
 
 
-Challenge 7
+## Challenge 7
 Create test_challenge7.py and write a test that does the following:
 
 Go to copart.com
