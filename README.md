@@ -1,43 +1,74 @@
-# stg_python_cert
-Using python and selenium to test websites
+Challenge 1
+Within test_challenge1.py, write a new test that does the following:
 
-1st Challenge:
-Navigate to Google and confirm the title of the page is for Google
-
-
-2nd Challenge: 
-Write a script that will go to copart.com, search for exotics and verify porsche is in the list of cars.  Use the hard assertion for this challenge.  
+Go to google.com
+Assert that the results page that loads has “google” in its title
 
 
-3rd Challenge: 
-For this challenge, go to copart and print a list of all the “Popular Items” of vehicle Make/Models on the home page and the URL/href for each type.  This list can dynamically change depending on what is authored by the content creator but using a loop will make sure that everything will be displayed regardless of the list size.
-Your output in the console would look like:
-IMPREZA - https://www.copart.com/popular/model/impreza
+Challenge 2
+Create test_challenge2.py and write a test that does the following:
+
+Go to copart.com
+Search for "exotics"
+Assert "PORSCHE" is in the list of cars on the Results Page
 
 
-4th Challenge:
-For this challenge, we are going to write a function that display the fibonacci sequence up to a certain number.  If I want the fibonacci for the 9 order of the sequence, I should see 21.  Keep your function to calculate the fibonacci sequence separate from the file that has the unittest.main().
+Challenge 3
+Create test_challenge3.py and write a test that does the following:
 
-However, to add additional challenge to this challenge, instead of displaying the number 21, I want the string representation of twenty one.  This will require you to use string concatenation to print out the string. 
+Go to copart.com
+On the Home Page, under Most Popular Items, there is a Makes/Models section. For each Make or Model in this section, print the name of the Make or Model with its URL (aka href) next to it
+Example Output: SILVERADO - https://www.copart.com/popular/model/silverado
 
 
-5th Challenge:
-For this challenge, go to https://www.copart.com and do a search for “porsche” and change the  drop down for “Show Entries” to 100 from 20.  Count how many different models of porsche is in the results on the first page and return in the terminal how many of each type exists.  
+Challenge 4
+Fibonacci (recursion)
 
-Possible values can be “CAYENNE S”, “BOXSTER S”, etc.  
+Create test_challenge4.py and write a test that does the following:
 
-For the 2nd part of this challenge, create a switch statement to count the types of damages.
-Here’s the types:
+Displays the fibonnaci sequence for N numbers
+However, print the number(s) as English words
+Example: If the sequence is 18, then print "Eighteen"
+
+Example: If the seqence is 120, then print "One Hundred Twenty"
+
+
+Challenge 5
+Part 1 - Create test_challenge5.py and write a test that does the following:
+
+Go to copart.com
+Search for "porsche"
+Change Show Entries to 100
+Print the number of occurrences for each Model
+Example: There might be x3 PANAMERA T and x11 CAYENNE
+
+Part 2 - Using the same, first three steps of Part 1, write a test that then does the following:
+
+Count the number of occurrences of each Damage type
+However, you need to map the Damage types to these:
 REAR END
 FRONT END
 MINOR DENT/SCRATCHES
 UNDERCARRIAGE
-And any other types can be grouped into one of MISC.  
+Any Damage type that does NOT match the above types should be grouped into a MISC Damage type
+Example: SIDE and ALL OVER would each count towards MISC
+
+Example Output: REAR END: 2, FRONT END: 7, MINOR DENT/SCRATCHES: 22, UNDERCARRIAGE: 0, MISC: 4
 
 
-6th Challenge:
-For this challenge, go to copart site, search for nissan, and then for the model, search for “skyline”.  This is a rare car that might or might not be in the list for models.  When the link does not exist to click on, your script will throw an exception.  Catch the exception and take a screenshot of the page of what it looks like.  
+Challenge 6
+Create test_challenge6.py and write a test that does the following:
+
+Go to copart.com
+Search for 'nissan'
+Then for the Model, search 'skyline'. This is a rare car that might not exist
+If it doesn't exist, catch the exception and take a screenshot
 
 
-7th Challenge:
-For this challenge, take a look at https://www.copart.com main page.  Go to the Makes/Models section of the page.  Create a 2 dimensional array that stores all the values displayed on the page along w/ the URL for that link.  Once you have this array, you can verify all the elements in the array navigates to the correct page.  
+Challenge 7
+Create test_challenge7.py and write a test that does the following:
+
+Go to copart.com
+Look at the Makes/Models section of the page
+Create a two-dimensional list that stores the names of the Make/Model as well as their URLs
+Check that each element in this list navigates to the correct page
