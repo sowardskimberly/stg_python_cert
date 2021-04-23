@@ -1,3 +1,5 @@
+#STG Certifications
+
 Challenge 1
 Within test_challenge1.py, write a new test that does the following:
 
@@ -30,7 +32,7 @@ Displays the fibonnaci sequence for N numbers
 However, print the number(s) as English words
 Example: If the sequence is 18, then print "Eighteen"
 
-Example: If the seqence is 120, then print "One Hundred Twenty"
+Example: If the seqence value is 120, then print "One Hundred Twenty"
 
 
 Challenge 5
