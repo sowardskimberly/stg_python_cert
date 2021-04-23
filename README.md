@@ -1,4 +1,4 @@
-#STG Certifications
+#STG Certification 1 Python
 
 Challenge 1
 Within test_challenge1.py, write a new test that does the following:
