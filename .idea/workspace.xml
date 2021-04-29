@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0ee3ca5-045b-47f9-a787-b111a23bc5dd" name="Default Changelist" comment="" />
+    <list default="true" id="d0ee3ca5-045b-47f9-a787-b111a23bc5dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge5/challenge5.py" beforeDir="false" afterPath="$PROJECT_DIR$/challenge5/challenge5.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for challenge6.Challenge6.test_challenge6">
-    <configuration name="Unittests for challenge3.Challenge3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="stg_python_cert" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/challenge3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;challenge3.Challenge3&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for challenge5.Challenge5">
     <configuration name="Unittests for challenge4.Challenge4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="stg_python_cert" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,6 +60,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;challenge4.Challenge4&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for challenge5.Challenge5" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="stg_python_cert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/challenge5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;challenge5.Challenge5&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -102,12 +105,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for challenge7.Challenge7.test_challenge7" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="stg_python_cert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/challenge7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;challenge7.Challenge7.test_challenge7&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for challenge5.Challenge5" />
+        <item itemvalue="Python tests.Unittests for challenge7.Challenge7.test_challenge7" />
         <item itemvalue="Python tests.Unittests for challenge7.Challenge7" />
         <item itemvalue="Python tests.Unittests for challenge6.Challenge6.test_challenge6" />
         <item itemvalue="Python tests.Unittests for challenge4.Challenge4" />
-        <item itemvalue="Python tests.Unittests for challenge3.Challenge3" />
       </list>
     </recent_temporary>
   </component>

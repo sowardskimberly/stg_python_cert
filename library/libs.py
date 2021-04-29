@@ -200,7 +200,7 @@ class Cars:
                 Waiting = WebDriverWait(driver_info, timeout).until(EC.presence_of_element_located((
                     By.XPATH, '(//tr[@class="odd"])')))
             except TimeoutException:
-                title = 'whoopsies.png'
+                title = 'whoopsies'
                 Cars.take_screenshot(title, driver_info)
                 print("Something really bad happened. You should make a ticket for this")
 
