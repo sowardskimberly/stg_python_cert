@@ -33,6 +33,7 @@ However, print the number(s) as English words
 Example: If the sequence is 18, then print "Eighteen"
 
 Example: If the seqence value is 120, then print "One Hundred Twenty"
+
 This challenge starts the use of a helper file
 
 
