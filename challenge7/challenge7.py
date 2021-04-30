@@ -1,13 +1,6 @@
 import unittest
 from selenium import webdriver
-import os
-import sys
-from libs import Cars
-
-# Add current directory to import a file used in all challenge folders
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
+from library.libs import Cars
 
 
 class Challenge7(unittest.TestCase):
@@ -19,7 +12,8 @@ class Challenge7(unittest.TestCase):
         self.driver.close()
 
     def test_challenge7(self):
-        """On Copart navigate check that the make list navigates to a page with that make on it
+        """On Copart navigate check that the make list navigates to a page with that make on it.
+        If the makes don't match it returns the makes that don't match for further investigating.
         """
         website = "https://www.copart.com"
         Cars.navigate_to_copart(website, self.driver)

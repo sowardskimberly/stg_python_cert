@@ -1,13 +1,6 @@
 import unittest
 from selenium import webdriver
-import os
-import sys
-from libs import Cars
-
-# Add current directory to import a file used in all challenge folders
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
+from library.libs import Cars
 
 
 class Challenge6(unittest.TestCase):
@@ -20,7 +13,7 @@ class Challenge6(unittest.TestCase):
 
     def test_challenge6(self):
         """Search for a make, then an unpopular model. If the model isn't listed catch the error
-        and take a screen shot of the page
+        and take a screen shot of the page, otherwise let us know if it was there
         """
 
         # define variables
