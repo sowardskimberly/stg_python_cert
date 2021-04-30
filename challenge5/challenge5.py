@@ -1,14 +1,6 @@
 import unittest
 from selenium import webdriver
-import os
-import sys
-#from libs import Cars
 from library.libs import Cars
-
-# Add current directory to import a file used in all challenge folders
-# currentdir = os.path.dirname(os.path.realpath(__file__))
-# parentdir = os.path.dirname(currentdir)
-# sys.path.append(parentdir)
 
 
 class Challenge5(unittest.TestCase):
