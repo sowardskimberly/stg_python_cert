@@ -33,6 +33,7 @@ However, print the number(s) as English words
 Example: If the sequence is 18, then print "Eighteen"
 
 Example: If the seqence value is 120, then print "One Hundred Twenty"
+This challenge starts the use of a helper file
 
 
 ## Challenge 5
@@ -57,6 +58,8 @@ Example: SIDE and ALL OVER would each count towards MISC
 
 Example Output: REAR END: 2, FRONT END: 7, MINOR DENT/SCRATCHES: 22, UNDERCARRIAGE: 0, MISC: 4
 
+This file uses the class Cars found in the library/libs folder
+
 
 ## Challenge 6
 Create test_challenge6.py and write a test that does the following:
@@ -66,6 +69,8 @@ Search for 'nissan'
 Then for the Model, search 'skyline'. This is a rare car that might not exist
 If it doesn't exist, catch the exception and take a screenshot
 
+This file uses the class Cars found in the library/libs folder
+
 
 ## Challenge 7
 Create test_challenge7.py and write a test that does the following:
@@ -74,3 +79,5 @@ Go to copart.com
 Look at the Makes/Models section of the page
 Create a two-dimensional list that stores the names of the Make/Model as well as their URLs
 Check that each element in this list navigates to the correct page
+
+This file uses the class Cars found in the library/libs folder
