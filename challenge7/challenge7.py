@@ -12,7 +12,8 @@ class Challenge7(unittest.TestCase):
         self.driver.close()
 
     def test_challenge7(self):
-        """On Copart navigate check that the make list navigates to a page with that make on it
+        """On Copart navigate check that the make list navigates to a page with that make on it.
+        If the makes don't match it returns the makes that don't match for further investigating.
         """
         website = "https://www.copart.com"
         Cars.navigate_to_copart(website, self.driver)

@@ -13,7 +13,7 @@ class Challenge6(unittest.TestCase):
 
     def test_challenge6(self):
         """Search for a make, then an unpopular model. If the model isn't listed catch the error
-        and take a screen shot of the page
+        and take a screen shot of the page, otherwise let us know if it was there
         """
 
         # define variables
